@@ -112,7 +112,9 @@ function addEmployee() {
 }
 
 function generatePageTemplate() {
-    fs.writeFile('/dist/index.html', pageTemplate(teamMembers),)
-}
+    fs.writeFile('./dist/index.html', pageTemplate(teamMembers), err => {
+        if (err) throw err;
+    });
+};
 
 createRoster()

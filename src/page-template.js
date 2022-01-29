@@ -5,23 +5,41 @@ const generateTeam = team => {
   
   const generateManager = manager => {
     return `
-      <section class="my-3" id="portfolio">
-        <h2 class="text-dark bg-primary p-2 display-inline-block">${manager.name}</h2>
-        <div class="flex-row justify-space-between">
-        ${manager.name})
-          
-          
+      <section>
+        <h2>${manager.name}</h2>
+        <div>
+          <p>${manager.id})</p>
+          <p>${manager.email})</p>
+          <p>${manager.officeNumber})</p>
         </div>
       </section>
-    `;
-  };
+    `
+  }
   
   const generateIntern = intern => {
-
+    return `
+      <section>
+        <h2>${intern.name}</h2>
+        <div>
+          <p>${intern.id})</p>
+          <p>${intern.email})</p>
+          <p>${intern.school})</p>
+        </div>
+      </section>
+    `
   }
 
   const generateEngineer = engineer => {
-
+    return `
+      <section>
+        <h2>${engineer.name}</h2>
+        <div>
+          <p>${engineer.id})</p>
+          <p>${engineer.email})</p>
+          <p>${engineer.github})</p>
+        </div>
+      </section>
+    `
   }
 
   const newTeam = []
