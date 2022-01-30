@@ -72,10 +72,10 @@ function addEmployee() {
                     message: 'What school do you attend?'
                 }
             ])
-            .then((name,id,email,school) => {
+            .then(({name,id,email,school}) => {
                 const intern = new Intern(name, id, email, school);
                 teamMembers.push(intern)
-                addEmployee();
+                addEmployee()
             });
         } else if (answer.nextEmployee === 'Engineer') {
             inquirer.prompt([
@@ -103,7 +103,7 @@ function addEmployee() {
             .then(({name,id,email,github}) => {
                 const engineer = new Engineer(name, id, email, github);
                 teamMembers.push(engineer)
-                addEmployee();
+                addEmployee()
             }); 
         } else {
             generatePageTemplate()
