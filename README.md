@@ -41,3 +41,8 @@ If you have any further questions you can contact me through my github or email!
 
 GitHub:  https://github.com/wiffin
 Email:   wiffin@ian.com
+
+## Walkthrough
+
+https://user-images.githubusercontent.com/92942302/151709915-b75b8626-91a9-4dc0-b6cf-cdfb99d7e8ac.mp4
+
